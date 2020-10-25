@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+
+    <h1>COVID-19 GLOBAL UPDATES</h1>
+    <div class="grid-container">
+        <div class="grid-item one">
+            <h3>NEW CONFIRMED CASES</h3>
+            <h4><%= data.NewConfirmed %></h4>
+        </div>
+        <div class="grid-item two">
+            <h3>NEW DEATHS</h3>
+            <h4><%= data.NewDeaths %></h4>
+        </div>
+        <div class="grid-item three">
+            <h3>NEW RECOVERD CASES</h3>
+            <h4><%= data.NewRecovered %></h4>
+        </div>
+        <div class="grid-item four">
+            <h3>TOTAL CONFIRMED CASES</h3>
+            <h4><%= data.TotalConfirmed %></h4>
+        </div>
+        <div class="grid-item five">
+            <h3>TOTAL DEATHS</h3>
+            <h4><%= data.TotalDeaths %></h4>
+        </div>
+        <div class="grid-item six">
+            <h3>TOTAL RECOVERD CASES</h3>
+            <h4><%= data.TotalRecovered %></h4>
+        </div>
+    </div>
+    <div class="country-text">
+        <p>For country wise Analytics &nbsp<a class="btn btn-primary" href="/countryWise">click here.</a></p>
+    </div>
+    
+
+<%- include("partials/footer"); -%>
